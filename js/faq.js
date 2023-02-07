@@ -77,5 +77,5 @@ class Faq {
 }
 
 new Faq(document.querySelector('.faq'), {
-  alwaysOpen: true
+  alwaysOpen: false
 })

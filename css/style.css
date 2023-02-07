@@ -12,6 +12,8 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /*Presentation-style (можно удалить)*/
@@ -155,7 +157,7 @@ section {
 
 /*SONP-style*/
 
-.sonp-navigation-menu {
+.smooth-navigation-menu {
     position: fixed;
     right: 0px;
     bottom: 50%;
@@ -163,7 +165,7 @@ section {
     padding: 20px;
 }
 
-.sonp-navigation-item
+.smooth-navigation-item
 {
     transition: .4s;
     width: 20px;
@@ -174,17 +176,19 @@ section {
     cursor: pointer;
 }
 
-.sonp-navigation-item:hover
+.smooth-navigation-item:hover
 {
     background: #ff0000;
     scale: 1.1;
 }
 
-.sonp-navigation-item:active
+.smooth-navigation-item:active
 {
     transition: .1s;
     background: #ff9900;
 }
+
+/*FAQ-style*/
 
 .faq {
   max-width: 30rem; 
@@ -202,8 +206,6 @@ section {
 .faq_item::after {
   box-sizing: border-box;
 }
-
-/*FAQ-style*/
 
 .faq_header {
   font-family: 'Poppins', sans-serif;
@@ -237,6 +239,7 @@ section {
 .faq_item_slidedown .faq_header::after {
   background-color: white;
   transform: rotate(-180deg);
+  display: none;
 }
 
 .faq_item_show > .faq_header,
